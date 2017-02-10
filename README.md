@@ -13,24 +13,19 @@ Dependencies:   Python 3.X
 		connect_info.csv
 		
 		
-
-Python 3.x:
-	>Available for free download from the web
-	>Make sure to add python to PATH variable for command line
 pyVmomi:
-	>Once python 3.x is available, use the command 'pip install pyvmomi' to install pyvmomi
+	>'pip install pyvmomi'
 Materials=>connect_info.csv:
-	>one hostname per row
+	>one hostname per row. Domain necessary.
 Materials=>write_list:
-	>log of the past few files written. Automatically updates, pls no touch.
-Logs:
-	>Past few logs saved here by date.
+	>log of the past few files written. However many filenames are written here when the whole system is set is how many logs        the program will keep. 
 
 ===========
 USAGE
 ===========
 
-Run daily, read logs in Logs folder if you feel like it.
+Run daily, read logs in Logs folder the program generates if you feel like it.
 
 -To change hosts logged: add lines to connect_info.csv, delete hostnames if you feel like it, please no blank lines
 -To change username and password: open env_logger.py with your favorite editor and change the user and pwd vars at the end
+-To change number of log files the program keeps: add fake filenames to the top of write_list
